@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-IdsdatabaseApplication<idsdatabase>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.database.idsdatabase.IdsdatabaseApplication",
+            "projectName": "idsdatabase",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-WebApplication<idsdatabase>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.database.auth.WebApplication",
+            "projectName": "idsdatabase",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootJwtAuthenticationApplication<SpringBootJwtAuthentication>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.grokonez.jwtauthentication.SpringBootJwtAuthenticationApplication",
+            "projectName": "SpringBootJwtAuthentication",
+            "args": ""
+        }
+    ]
+}

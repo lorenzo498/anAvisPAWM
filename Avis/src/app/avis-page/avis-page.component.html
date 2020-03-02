@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="titolo">
+    <div>BENTORNATO</div>
+    <p><b>AVIS!</b></p>
+  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card my-5">
+          <div class="card-body">
+            <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+            <ul class="text-center list-inline py-3">
+              <li class="list-inline-item" style="margin-bottom: 30px; margin-right: 15px;">
+                <a routerLink="/avis-orari" class="btn btn-info">Guarda gli orari disponibili</a>
+                  </li>
+              <li class="list-inline-item">
+                <a routerLink="/avis-mettiorari" class="btn btn-info">Aggiungi Orari</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a routerLink="/prenotazione-form-list" class="btn btn-info">Guarda le prenotazioni</a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a routerLink="/statistiche" class="btn btn-info">Guarda le statistiche</a>
+                          </li>
+            </ul>
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+      <button class="btn btn-danger" style="margin-bottom: 30px;" (click)="uscita()">Logout</button>
+
+
+   
+  </div>
+

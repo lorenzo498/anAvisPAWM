@@ -1,0 +1,72 @@
+<div class="Divisore2" style="margin-top: 30px;">
+  <div style="TEXT-ALIGN: CENTER ;">
+    <h3>Analisi del Sangue</h3>
+  </div>
+
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-hover table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Paziente</th>
+            <th scope="col">Globuli Rossi</th>
+            <th scope="col">Globuli Bianchi</th>
+            <th scope="col">Emoglobina</th>
+            <th scope="col">Ematocrito</th>
+            <th scope="col">Mcv(Volume corpuscolare)</th>
+            <th scope="col">Mch(HB corpuscolare)</th>
+            <th scope="col">Mchc(Conc HB media)</th>
+            <th scope="col">Piastrine</th>
+            <th scope="col">Aggiungi un annotazione ed inviala al paziente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let AnalisiSangue of analisi; let x = index;">
+            <td>{{ AnalisiSangue.paziente}}</td>
+            <td>
+              {{ AnalisiSangue.globuliRossi}}
+            </td>
+            <td>
+              {{ AnalisiSangue.globuliBianchi}}
+            </td>
+            <td>
+              {{ AnalisiSangue.emoglobina}}
+            </td>
+            <td>
+              {{ AnalisiSangue.ematocrito}}
+            </td>
+            <td>
+              {{ AnalisiSangue.mcv}}
+            </td>
+            <td>
+              {{ AnalisiSangue.mch}}
+            </td>
+            <td>
+              {{ AnalisiSangue.mchc}}
+            </td>
+            <td>
+              {{ AnalisiSangue.piastrine}}
+            </td>            
+            <td>
+                <input type="text" [(ngModel)]="analisi[x].annotazione" class="form-control">
+                
+                <button class="btn btn-danger" (click)="aggiornaAnalisi(analisi[x])" >Aggiungi il commento</button>
+            </td>
+          </tr>
+        </tbody>   
+      </table>
+      <a routerLink="/pagina-dottore" class="btn btn-info">Torna alla pagina principale del Dottore</a>
+      </div>
+
+      <div class="row" style="margin-top: 30px; width: 350px; height: 350px;" *ngIf="showMsg">
+        <div class="col-xs-12">
+          <div class="alert alert-success">
+            <p>
+              <strong>Hai scritto con successo l'annotazione</strong>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
