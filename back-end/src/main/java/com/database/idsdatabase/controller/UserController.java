@@ -4,7 +4,7 @@ package com.database.idsdatabase.controller;
 
 import javax.mail.MessagingException;
 
-import com.database.idsdatabase.controller.SmtpMailSender;
+
 import com.database.idsdatabase.dto.UserDTO;
 import com.database.idsdatabase.jwt.JwtUserDetailsService;
 
@@ -38,7 +38,7 @@ public class UserController {
     {
         smtpMailSender.send("lorenzo.brancaleoni@studenti.unicam.it", "DONAZIONE EMERGENZA", "Raggiungere l'ospedale più vicino per effettuare una donazione!!");
         smtpMailSender.send("brian.bernardini@studenti.unicam.it", "DONAZIONE EMERGENZA", "Raggiungere l'ospedale più vicino per effettuare una donazione!!");
-        smtpMailSender.send("leonardo.mogianesi@studenti.unicam.it", "DONAZIONE EMERGENZA", "Raggiungere l'ospedale più vicino per effettuare una donazione!!");
+        
 
 
         
